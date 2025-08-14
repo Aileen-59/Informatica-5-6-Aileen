@@ -1,2 +1,2 @@
-something= input("Tell us something:")
-print(f"{something}", )
+something= input("Tell us something\n ")
+print(something.replace(" ","..."))
