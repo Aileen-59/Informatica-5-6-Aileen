@@ -1,9 +1,12 @@
-greeting = input("Type a greeting: ")
+while True:
 
-if greeting.startswith("Hello"):
-    print("$0")
-elif greeting.startswith("H"):
-    print("You have won $20")
+    greeting = input("Type a greeting: ")
 
-else:
-    print("CONGRATULATIONS! YOU HAVE WON $100")
+    if greeting.startswith("hello"):
+        print("$0")
+    elif greeting.startswith("h"):
+        print("You have won $20")
+
+    else:
+        print("CONGRATULATIONS! YOU HAVE WON $100")
+        break
