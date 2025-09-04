@@ -1,7 +1,12 @@
 def main():
     number = int(input("Enter a positive number: "))
-    multiplication(number)
+    table(number)
     
-def multiplication(number):
-    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    table = number * numbers
+def table(number):
+    i = 1
+    while i <= 10:
+        multiplication = number * i
+        print(f"{number} x {i} = {multiplication}")
+        i += 1
+    
+main()
