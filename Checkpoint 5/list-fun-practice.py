@@ -1,23 +1,31 @@
-list = [5, 8, 2, 7, 1, 6, 3, 4]
-
+def main():
+    print(length(values()))
+    mean(values())
+    range_of_list(values())
+    
+def values(value):
+    value_list = []
+    while True:
+        value = int(input("Enter a value:"))
+        if value != 0:
+            value_list.append(value)
+            print(value_list)
+            ordered_list = sorted(value_list)
+            print(ordered_list)
+            continue
+        else:
+            break
+    return value_list
 
 def length(list):
-    length = len(list)
-    return length
-print("The length of the list is: ", length(list))
-
+    return len(list)
 
 def mean(list):
-    mean = sum(list)/length(list)
-    return mean
-print("The mean of the list is: ", mean(list))
-
+    print(sum(list) / len(list))
 
 def range_of_list(list):
-    range_of_list = max(list) - min(list)
-    return range_of_list
-print("The difference between the smallest and the largest value: ", range_of_list(list))
+    print(max(list) - min(list))
 
 
 
-def add_values():
+main()
