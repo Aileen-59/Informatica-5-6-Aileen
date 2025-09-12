@@ -3,7 +3,7 @@ def main():
     mean(values())
     range_of_list(values())
     
-def values(value):
+def values():
     value_list = []
     while True:
         value = int(input("Enter a value:"))
@@ -25,7 +25,6 @@ def mean(list):
 
 def range_of_list(list):
     print(max(list) - min(list))
-
 
 
 main()
