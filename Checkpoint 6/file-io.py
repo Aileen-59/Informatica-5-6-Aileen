@@ -13,14 +13,13 @@
 # file.write(f"{name}\n")                                                  # to add a new line after each name
 # file.close()                                                                  #to close the file
 
-#Exercise 3
-# with open("names.txt", "a") as file:                                   #"a" will add to the file
-#     file.write(f"{input("What's your name? ")}") 
+
+# with open("names.txt", "a") as file:                                   
+#      file.write(f"{input("What's your name? ")}\n") 
 
 
-# Exercise 4
-with open("names.txt", "r") as file:                                    # "r" will read the lines of the file
+with open("names.txt", "r") as file:                                   
     lines = file.readlines()
     
-    for line in lines:
-        print(f"Hello, {line.rstrip()}")                                #rstrip() removes spaces to the right. 
+for line in sorted(lines):
+    print(f"Hello, {line.rstrip()}")                                
