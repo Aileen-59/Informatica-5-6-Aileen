@@ -10,3 +10,7 @@ for principle in doctrine:
     
     
 school_objective = ["Deepen conversion to Jesus Christ and His restored gospel", "Qualify for the blessings of the temple", "Prepare for missionary and Church service", "Build the kingdom of God"]
+
+for objective in school_objective:
+    print(objective)
+    
