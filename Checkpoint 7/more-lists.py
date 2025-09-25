@@ -33,4 +33,4 @@ for row in matrix:
 #Print columns
 for column in range(3):
     for row in matrix:
-        print(row[column])
+        print(row[column])  
