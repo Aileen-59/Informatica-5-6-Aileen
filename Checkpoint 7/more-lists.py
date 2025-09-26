@@ -32,5 +32,7 @@ for row in matrix:
     print(row)
 #Print columns
 for column in range(3):
-    for row in matrix:
-        print(row[column])  
+    list = []
+    for row in range(3):
+        list.append(matrix[row][column])
+    print(list)
