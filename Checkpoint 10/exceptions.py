@@ -24,12 +24,27 @@
 # print(spam(1))
 
 
-while True:
-    try:
-        x = int(input("What's x? "))
-    except ValueError:
-        print("x is not a number")
-    else:
-        break
+# while True:
+#     try:
+#         x = int(input("What's x? "))
+#     except ValueError:
+#         print("x is not a number")
+#     else:
+#         break
 
-print(f"x is equal to {x}")
+# print(f"x is equal to {x}")
+
+
+def read_small_integer():
+    while True:
+        try:
+            input_str = input("Please type a number: ")
+            number = int(input_str)
+            if number < 100 and number >= 0:
+                return number
+        except ValueError:
+            pass
+        print("This input is invalid. Please try again.")
+        
+number = read_small_integer()
+print(number, "to the power of three is", number ** 3)
