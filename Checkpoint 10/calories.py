@@ -23,5 +23,17 @@ food = {
     
 first = input("Enter your first selection: ")
 second = input("Enter your second selection: ")
- 
+
+
+if first == "Watermelon" or second == "Whole milk":
+    raise ValueError("You cannot combine Watermelon with milk.")
+elif first == "Whole milk" or second == "Watermelon":
+    raise ValueError("You cannot combine Watermelon with milk.")
+elif first not in food and second not in food:
+    print("One or both of your selections are not in the list.")
+else:
+    if first in food and second in food: 
+        total_calories = int(food[first]) + int(food[second])
+    print (f"The total calories are: {total_calories}")
+
     
