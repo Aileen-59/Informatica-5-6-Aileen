@@ -7,4 +7,4 @@ universities = {
 }
 def main():
     name = input("Type the name of the university: ")
-
+    
