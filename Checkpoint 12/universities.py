@@ -5,12 +5,12 @@ universities = {
     "LaSalle":{"distance":"299.7","num_majors":"42","price":"60000"},
     "UTP":{"distance":"8.8","num_majors":"4","price":"2505"}
 }
+def main():
+    name = input("Type the name of the university: ")
+    if name not in universities:
+        print("Sorry, that university is not in our list.")
+    else:
+        uni = universities[name]
+        print(uni)
 
-name = input("Type the name of the university: ").strip()
-if name not in universities:
-    print("Sorry, that university is not in our list.")
-else:
-    uni = universities[name]
-try:
-    response = requests.get()
-    
+main()
