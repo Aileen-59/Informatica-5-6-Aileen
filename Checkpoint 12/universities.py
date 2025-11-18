@@ -12,5 +12,7 @@ def main():
     else:
         uni = universities[name]
         print(uni)
-
+    api = requests.get("http://universities.hipolabs.com/search?name="+universities[uni]["officiald_name"])
+    print(api.json())
+    
 main()
